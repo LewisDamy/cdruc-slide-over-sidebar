@@ -34,7 +34,7 @@
                    class="flex items-center px-6 py-2.5 text-gray-500 hover:text-orange-600 group">
                   <component
                       :is="item.icon"
-                      class="width: 10px"/>
+                      class="mr-2 w-5 h-5 text-gray-400 group-hover:text-orange-500"/>
                   {{ item.label }}
                 </a>
               </div>
@@ -56,6 +56,7 @@
                 <h3 class="mx-6 mb-2 text-xs tracking-widest text-gray-400 uppercase">
                   Following
                 </h3>
+
 
                 <a v-for="(item, index) in following"
                    :href="item.href" :key="index"
@@ -120,6 +121,7 @@
           Following
         </h3>
 
+
         <a v-for="(item, index) in following"
            :href="item.href" :key="index"
            class="flex items-center px-6 py-2.5 text-gray-500 hover:text-orange-600 group">
@@ -136,7 +138,7 @@
               @click="sidebarOpened = true"
               class="mr-3 md:hidden flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full text-gray-600 hover:ring-2 hover:ring-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-600"
               type="button" value="Open sidebar">
-            <MenuIcon class="h-5 w-5"/>
+            <MenuIcon class="h-6 w-6"/>
           </button>
           <form action="" class="w-full max-w-md">
             <div class="flex relative items-center text-gray-400 focus-within:text-gray-600">
